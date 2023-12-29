@@ -4,7 +4,6 @@ function generateHaiku(event) {
   new Typewriter("#haiku", {
     strings: "Generating haiku...",
     autoStart: true,
-    loop: "false",
   });
 }
 
