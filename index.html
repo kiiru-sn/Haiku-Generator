@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Haiku Generator</title>
   </head>
@@ -10,9 +11,15 @@
     <div class="container">
       <header>
         <h1>AI Haiku Generator</h1>
+        <p>
+          Haiku (俳句):
+          <br />
+          A Japanese three-line poem with a 5-7-5 syllable structure, typically
+          capturing a moment in nature or expressing emotion concisely.
+        </p>
       </header>
       <main>
-        <form>
+        <form id="haiku-generator-form">
           <input
             type="text"
             placeholder="Enter a topic for a Haiku"
@@ -23,12 +30,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="haiku">
-          The poem will go here <br />
-          And here...
-          <br />
-          And here...
-        </div>
+        <div class="haiku" id="haiku"></div>
       </main>
       <footer>
         This AI project was coded by
