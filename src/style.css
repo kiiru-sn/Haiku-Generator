@@ -1,4 +1,74 @@
 body {
-  background: rgb(211, 204, 178)75, 175, 159);
+  background-color: rgb(240, 238, 225);
+  font-family: monospace;
+}
+
+a {
+  color: rgb(151, 127, 127);
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
   text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: rgb(119, 116, 101);
+}
+
+main {
+  margin-bottom: 25px;
+}
+
+form {
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0px 5px 80px rgba(168, 163, 151, 0.8);
+  margin-bottom: 25px;
+}
+
+.instructions {
+  padding: 5px;
+  border: 2px solid rgb(223, 200, 200);
+  border-radius: 50px;
+  width: 80%;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgb(165, 83, 83);
+}
+
+.submit-button {
+  margin-left: 10px;
+  border-radius: 50px;
+  background: rgb(235, 223, 205);
+  color: rgb(151, 127, 127);
+  border: none;
+  padding: 14px 24px;
+  width: 100px;
+  font-size: 14px;
+}
+
+.haiku {
+  font-size: 20px;
+  background: white;
+  color: grey;
+  padding: 20px;
+  line-height: 1.5;
+  border-left: 3px solid rgb(223, 200, 200);
+  box-shadow: 0px 5px 80px rgba(219, 210, 192, 0.8);
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
 }
