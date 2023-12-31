@@ -16,6 +16,10 @@ function generateHaiku(event) {
     "You are a haiku expert and you love to write haikus. Your mission is to write a haiku and seperate each line with a <br />. Make sure to follow the user instructions.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let haikuElement = document.querySelector("#haiku");
+  haikuElement.classList.remove("hidden");
+  haikuElement.innerHTML = `Generating a haiku about ${instructionsInput.value}...`;
+
   console.log("Generating haiku...");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
