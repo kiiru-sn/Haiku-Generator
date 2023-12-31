@@ -1,5 +1,4 @@
 function displayHaiku(response) {
-  console.log("Haiku generated.");
   new Typewriter("#haiku", {
     strings: response.data.answer,
     autoStart: true,
@@ -19,10 +18,6 @@ function generateHaiku(event) {
   let haikuElement = document.querySelector("#haiku");
   haikuElement.classList.remove("hidden");
   haikuElement.innerHTML = `Generating a haiku about ${instructionsInput.value}...`;
-
-  console.log("Generating haiku...");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiUrl).then(displayHaiku);
 }
